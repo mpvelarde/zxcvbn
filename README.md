@@ -207,9 +207,9 @@ The optional `user_inputs` argument is an array of strings that zxcvbn will trea
 
 ## Have I Been Pwned Integration 
 The optional `donehibp` argument is a function to be called once the request to HIBP API is finished.
-If callback param is not null, a request is made to https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange
+If `donehibp` is not null, a request is made to https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange
 
-Callback will return extra matches:
+`donehibp` will receive extra matches:
 
 ``` coffee
 [{
