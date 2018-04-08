@@ -206,8 +206,8 @@ result.calc_time  # how long it took zxcvbn to calculate an answer,
 The optional `user_inputs` argument is an array of strings that zxcvbn will treat as an extra dictionary. This can be whatever list of strings you like, but is meant for user inputs from other fields of the form, like name and email. That way a password that includes a user's personal information can be heavily penalized. This list is also good for site-specific vocabulary — Acme Brick Co. might want to include ['acme', 'brick', 'acmebrick', etc].
 
 ## Have I Been Pwned Integration 
-The optional `donehibp` argument is a function to be called once the call to HIBP api is finished.
-If a callback is sent, hibp module will make a request to https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange
+The optional `donehibp` argument is a function to be called once the request to HIBP API is finished.
+If callback param is not null, a request is made to https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange
 
 Callback will return extra matches:
 
