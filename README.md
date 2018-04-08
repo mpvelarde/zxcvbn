@@ -140,7 +140,7 @@ Add to your .html:
 [try zxcvbn interactively](https://lowe.github.io/tryzxcvbn/) to see these docs in action.
 
 ``` javascript
-zxcvbn(password, user_inputs=[])
+zxcvbn(password, user_inputs=[], donehibp)
 ```
 
 `zxcvbn()` takes one required argument, a password, and returns a result object with several properties:
