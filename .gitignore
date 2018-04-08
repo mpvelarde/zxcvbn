@@ -9,3 +9,5 @@ lib
 *.swp
 *.swo
 tmux-*.log
+
+.DS_Store
